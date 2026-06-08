@@ -9,7 +9,8 @@
     "dev": "tsx watch src/index.tsx",
     "seed": "tsx src/db/run-seed.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "changelog": "tsx scripts/update-changelog.ts"
   },
   "dependencies": {
     "@hono/node-server": "^2.0.4",
