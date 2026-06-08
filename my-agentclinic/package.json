@@ -3,12 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsx watch src/index.tsx",
+    "seed": "tsx src/db/run-seed.ts",
+    "test": "vitest run"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@hono/node-server": "^2.0.4",
+    "better-sqlite3": "^12.10.0",
+    "hono": "^4.12.23",
+    "zod": "^4.4.3"
+  },
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "@types/better-sqlite3": "^7.6.13",
+    "tsx": "^4.22.4",
+    "typescript": "^5.5.3",
+    "vitest": "^4.1.8"
   },
   "private": true
 }

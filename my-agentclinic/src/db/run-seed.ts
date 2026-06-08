@@ -1,0 +1,11 @@
+import { createDb } from './index.js';
+import { migrate } from './migrate.js';
+import { seed } from './seed.js';
+
+const db = createDb();
+console.log('Running migrations...');
+migrate(db);
+console.log('Seeding data...');
+seed(db);
+console.log('Database initialized and seeded successfully.');
+db.close();
