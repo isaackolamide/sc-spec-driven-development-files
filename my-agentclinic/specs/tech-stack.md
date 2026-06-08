@@ -18,4 +18,4 @@
 ## Testing & Validation
 
 - **Vitest**: A fast, modern unit and integration testing framework used for project validation.
-- **Test Command**: The test suite is executed using `npm run test` (mapped to `vitest run` in `package.json`).
+- **Test Command**: The test suite is executed using `npm run test` (mapped to `vitest run` in `package.json`). For interactive development, run `npm run test:watch` (mapped to `vitest`).

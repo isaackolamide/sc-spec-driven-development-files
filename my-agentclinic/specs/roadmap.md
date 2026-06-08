@@ -10,6 +10,7 @@ High-level implementation order broken down into very small, incremental phases 
   - `Ailment` (Title, Description, Severity)
   - `Therapy` (Name, Description, Cost in Tokens)
   - `Appointment` (Agent ID, Ailment ID, Therapy ID, Scheduled Time, Status)
+- **Validation**: Implement and run Vitest unit tests verifying that entity schemas accurately reject invalid properties and boundaries.
 
 ## Phase 2: Database Initialization & Seeding
 
@@ -18,6 +19,7 @@ High-level implementation order broken down into very small, incremental phases 
 - Write a seed script to populate default data:
   - Standard ailments (e.g., "Hallucination Fever", "Token Limit Depletion", "Prompt Injection Stress")
   - Recommended therapies (e.g., "System Instruction Refactoring", "Cooling Period/Sleep", "Context Window Reset")
+- **Validation**: Implement Vitest database integration tests verifying correct table schema, row population, and seed integrity.
 
 ## Phase 3: Core API Endpoints
 
@@ -26,6 +28,7 @@ High-level implementation order broken down into very small, incremental phases 
   - `POST /api/agents` to register a new agent.
   - `POST /api/appointments` to schedule an appointment.
   - `GET /api/appointments` to list all scheduled appointments for the staff dashboard.
+- **Validation**: Implement API route integration tests using Vitest (sending mock requests to Hono app) to assert correct response status codes, payload structures, and error handling.
 
 ## Phase 4: Frontend Landing Page & Booking UI
 
@@ -34,9 +37,11 @@ High-level implementation order broken down into very small, incremental phases 
   - Select/enter agent characteristics.
   - Choose diagnosed ailment and desired therapy.
   - Select date/time to book an appointment.
+- **Validation**: Write tests validating form submission behaviors, user input constraints, and client-side error states.
 
 ## Phase 5: Clinic Dashboard & Appointment Management
 
 - Build the clinic staff dashboard to display list of active and pending appointments.
 - Allow staff to update status of appointments (e.g., "Completed", "In Progress", "Cancelled").
 - Polish UI transitions, hover states, and micro-animations.
+- **Validation**: Verify end-to-end appointment lifecycle status changes and dashboard list updates using integration tests.
