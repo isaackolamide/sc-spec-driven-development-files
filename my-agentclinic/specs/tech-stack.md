@@ -12,8 +12,8 @@
 
 ## Frontend
 
-- **HTML5 & Vanilla CSS**: Clean, semantic markup and custom modern CSS for rich aesthetics, dark mode, smooth animations, and premium styling.
-- **React (Vite / Next.js)**: Component-based architecture for dynamic, interactive, and responsive dashboards for agents and clinic staff.
+- **HTML5 & Vanilla CSS**: Clean, semantic markup and custom modern CSS for rich aesthetics, dark mode, smooth animations, responsive layout (using media queries, flexbox, and grid), and premium styling.
+- **React (Vite / Next.js)**: Component-based architecture for dynamic, interactive, and responsive dashboards for agents and clinic staff across mobile, tablet, and desktop viewports.
 
 ## Testing & Validation
 

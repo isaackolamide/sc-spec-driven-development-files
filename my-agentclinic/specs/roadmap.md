@@ -33,15 +33,17 @@ High-level implementation order broken down into very small, incremental phases 
 ## Phase 4: Frontend Landing Page & Booking UI
 
 - Implement an attractive, modern UI with dark-mode styling and glassmorphism.
+- Ensure the layout is fully responsive, adapting seamlessly to mobile, tablet, and desktop viewports.
 - Create the Agent Intake Form:
   - Select/enter agent characteristics.
   - Choose diagnosed ailment and desired therapy.
   - Select date/time to book an appointment.
-- **Validation**: Write tests validating form submission behaviors, user input constraints, and client-side error states.
+- **Validation**: Write tests validating form submission behaviors, user input constraints, and client-side error states. Verify layout responsiveness across different simulated screen dimensions.
 
 ## Phase 5: Clinic Dashboard & Appointment Management
 
 - Build the clinic staff dashboard to display list of active and pending appointments.
+- Ensure all dashboard tables, stats cards, and action buttons are fully responsive on small screens.
 - Allow staff to update status of appointments (e.g., "Completed", "In Progress", "Cancelled").
 - Polish UI transitions, hover states, and micro-animations.
-- **Validation**: Verify end-to-end appointment lifecycle status changes and dashboard list updates using integration tests.
+- **Validation**: Verify end-to-end appointment lifecycle status changes and dashboard list updates using integration tests. Validate responsiveness of the interactive dashboard under mobile/tablet widths.
