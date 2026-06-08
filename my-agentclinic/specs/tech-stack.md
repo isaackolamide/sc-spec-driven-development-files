@@ -14,3 +14,8 @@
 
 - **HTML5 & Vanilla CSS**: Clean, semantic markup and custom modern CSS for rich aesthetics, dark mode, smooth animations, and premium styling.
 - **React (Vite / Next.js)**: Component-based architecture for dynamic, interactive, and responsive dashboards for agents and clinic staff.
+
+## Testing & Validation
+
+- **Vitest**: A fast, modern unit and integration testing framework used for project validation.
+- **Test Command**: The test suite is executed using `npm run test` (mapped to `vitest run` in `package.json`).
